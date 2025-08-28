@@ -43,7 +43,10 @@
     <div class="w-screen h-screen bg-[url(/images/HomeBg.webp)] bg-[center_top_20%] bg-cover object-cover py-1 px-4">
         <nav class="firstNav flex justify-between items-center mb-5">
             <img src="./images/logo.png" class="w-50 ps-0" alt="company logo">
-            <i class="fa-solid fa-bars md:hidden text-white text-xl" onclick="document.getElementById('nav').style.height ='100vh'"></i>
+            <div class="flex gap-3 md:hidden">
+                <i class="fa-solid fa-magnifying-glass text-white text-xl"></i>
+                <i class="fa-solid fa-bars text-white text-xl" onclick="document.getElementById('nav').style.height ='100vh'"></i>
+            </div>
             <ul class="text-white hidden md:flex gap-3 text-sm font-semibold me-4">
                 <li><a href="#">News</a></li>
                 <li><a href="#">Jobs</a></li>
