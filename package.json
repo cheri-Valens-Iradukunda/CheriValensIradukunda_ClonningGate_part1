@@ -1,0 +1,23 @@
+{
+  "name": "cherivalensiradukunda_clonninggate_part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheri-Valens-Iradukunda/CheriValensIradukunda_ClonningGate_part1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheri-Valens-Iradukunda/CheriValensIradukunda_ClonningGate_part1/issues"
+  },
+  "homepage": "https://github.com/cheri-Valens-Iradukunda/CheriValensIradukunda_ClonningGate_part1#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
