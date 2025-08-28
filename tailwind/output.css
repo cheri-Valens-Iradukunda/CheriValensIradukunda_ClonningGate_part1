@@ -1266,9 +1266,29 @@
       visibility: visible;
     }
   }
+  .md\:col-span-1 {
+    @media (width >= 48rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .md\:mx-5 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:my-10 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 10);
+    }
+  }
   .md\:mt-0 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mb-10 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 10);
     }
   }
   .md\:block {
@@ -1289,6 +1309,11 @@
   .md\:h-44 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 44);
+    }
+  }
+  .md\:w-3\/8 {
+    @media (width >= 48rem) {
+      width: calc(3/8 * 100%);
     }
   }
   .md\:w-22 {
@@ -1341,9 +1366,24 @@
       gap: calc(var(--spacing) * 5);
     }
   }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .md\:bg-amber-300 {
     @media (width >= 48rem) {
       background-color: var(--color-amber-300);
+    }
+  }
+  .md\:px-4 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:py-5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .md\:text-2xl {

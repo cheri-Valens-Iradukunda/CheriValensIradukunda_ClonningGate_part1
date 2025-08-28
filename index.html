@@ -80,12 +80,12 @@
             </div>
         </div>
     </div>
-    <div class="mx-5 mt-3 mb-10">
-        <h2 class="text-4xl font-bold py-6">Discover the University of Liverpool</h2>
-        <div class="grid grid-cols-3 gap-10">
-            <img src="./images/contact-us-VGM.jpg.jpeg" class="col-span-1" alt="discovery image">
-            <div class="col-span-2 space-y-4  text-lg">
-                <p class="text-2xl">
+    <div class="md:mx-5 mt-3 md:mb-10">
+        <h2 class="text-2xl mx-5 md:text-4xl font-bold py-6">Discover the University of Liverpool</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10">
+            <img src="./images/contact-us-VGM.jpg.jpeg" class="hidden md:block col-span-1" alt="discovery image">
+            <div class="col-span-2 space-y-4 mx-5  text-lg">
+                <p class="md:text-2xl">
                     We are the University of Liverpool. Located at the heart of a thrilling world city, we are a 
                     dynamic institution of academic excellence and innovation, making 
                     a positive impact across the United Kingdom and the wider world.
@@ -97,39 +97,44 @@
                     explore the work we’re doing with our famous home city.
                 </p>
                 
-                <div class="flex gap-4">
-                    <div class="border-1 border-gray-800 p-3 mt-2 w-fit">
+                <div class="block md:flex gap-4">
+                    <div class="border-1 border-gray-800 p-3 mt-2 w-fill md:w-fit">
                         <a href="#" class="hover:underline decoration-2">Learn about us</a>
                     </div>
-                    <div class="border-1 border-gray-800 p-3 mt-2 w-fit">
+                    <div class="border-1 border-gray-800 p-3 mt-2 w-fill md:w-fit">
                         <a href="#" class="hover:underline decoration-2">Liverpool: Our city, our inspiration</a>
                     </div>
                 </div>
             </div>
+            <img src="./images/contact-us-VGM.jpg.jpeg" class="block w-screen md:hidden object-cover mt-5" alt="discovery image">
         </div>
     </div>
-    <div class="px-4 bg-gray-200">
-        <div class="bg-[rgb(239_66_111)] flex items-center gap-5 justify-between px-10 py-5">
+    <div class="md:px-4 bg-gray-200">
+        <div class="bg-[rgb(239_66_111)] sm:flex items-center gap-5 justify-between px-10 py-5">
             <img src="./images/computer.png" alt="computer icon" class=" w-24">
-            <h3 class=" text-white text-4xl font-bold">Manage your offer</h3>
-            <p class="w-3/8 text-white text-2xl">Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
-            <button class=" bg-[rgb(33_43_88)] text-lg text-white hover:underline p-3 w-44">Manage your offer now</button>
+            <div class="md:flex md:justify-center space-y-4 w-full">
+                <h3 class=" text-white text-2xl md:text-4xl font-bold">Manage your offer</h3>
+                <p class="md:w-3/8 text-white text-xl md:text-2xl">Find out how to confirm your place to study at Liverpool and make changes to your offer.</p>
+                <button class=" bg-[rgb(33_43_88)] text-md md:text-lg text-white hover:underline p-3 w-fit h-fit md:w-44">Manage your offer now</button>
+            </div>
         </div>
-        <div class="grid grid-cols-3 my-10 text-white bg-[rgba(33_43_88)]">
+        <div class="grid grid-cols-1 md:grid-cols-3 md:my-10 text-white bg-[rgba(33_43_88)]">
+            <img src="./images/Two,students,working,on,campus.jpg.jpeg" alt="" class="block md:hidden w-full h-full object-cover">
+
             <div class="col-span-2 p-10 space-x-2">
                 <h2 class="font-bold text-3xl">Study with us</h2>
                 <p>Discover endless possibilities. We offer a range of courses with support and expertise 
                     to help you succeed in your future career. Find your perfect course, explore our subject areas or
                      discover everything you need to know about studying with us.</p>
-                <button class="border-1 border-white p-4 my-2">Undergraduate</button>
-                <button class="border-1 border-white p-4 my-2">Master's</button>
-                <button class="border-1 border-white p-4 my-2">Postgraduate research</button><br>
-                <button class="border-1 border-white p-4 my-2">Continuing Professional Development</button>
-                <button class="border-1 border-white p-4 my-2">International students</button>
+                <button class="border-1 border-white md:w-fit w-full p-4 my-2">Undergraduate</button>
+                <button class="border-1 border-white md:w-fit w-full p-4 my-2">Master's</button>
+                <button class="border-1 border-white md:w-fit w-full p-4 my-2">Postgraduate research</button><br>
+                <button class="border-1 border-white md:w-fit w-full p-4 my-2">Continuing Professional Development</button>
+                <button class="border-1 border-white md:w-fit w-full p-4 my-2">International students</button>
             </div>
-            <img src="./images/Two,students,working,on,campus.jpg.jpeg" alt="" class="col-span-1 h-full object-cover">
+            <img src="./images/Two,students,working,on,campus.jpg.jpeg" alt="" class="hidden md:block col-span-1 h-full object-cover">
         </div>
-        <div class="bg-[rgb(239_66_111)] block md:flex items-center gap-5 [&>*]:space-y-5  md:justify-between px-10 py-5">
+        <div class="bg-[rgb(239_66_111)] block md:flex items-center gap-5 [&>*]:space-y-5  md:justify-between px-10 md:py-5">
             <div class="mx-auto">
                 <img src="./images/image-removebg-preview.png" alt="computer icon" class="w-34 md:w-44">
             </div>
