@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/tailwind/output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"rel="stylesheet"/>
 </head>
-<body class="overflow-x-hidden text-gray-700 bg-gray-300">
+<body class="overflow-x-hidden w-[100vw] text-gray-700 bg-gray-300">
     <div class="w-screen h-screen bg-[url(/images/HomeBg.webp)] bg-[center_top_20%] bg-cover py-1 px-4">
         <nav class="firstNav flex justify-between items-center mb-5">
             <img src="./images/logo.png" class="w-50 ps-0" alt="company logo">
@@ -22,7 +22,7 @@
             </ul>
         </nav>
         <nav class="secondNav flex justify-between text-white ps-0">
-            <ul class="flex content-start text-md font-bold gap-10 [&>*]:pb-3 [&>*]:hover:border-b-2 [&>*]:hover:border-b-amber-50">
+            <ul class="flex content-start text-md font-bold md:gap-5 lg:gap-8 [&>*]:pb-3 [&>*]:hover:border-b-2 [&>*]:hover:border-b-amber-50">
                 <li class="flex items-center gap-2">
                     <a href="#">Study</a>
                     <i class="fa-solid fa-chevron-down"></i>
@@ -46,7 +46,7 @@
             </ul>
             <div class="flex items-center space-x-3 cursor-pointer text-md">
                 <i class="fa-solid mt-1 fa-magnifying-glass"></i>
-                <p class="hover:border-b-2 hover:border-white">search the site</p>
+                <p class="hover:border-b-2 hover:border-white hidden md:block">search the site</p>
             </div>
         </nav>
         <h2 class="text-[2.48832rem] w-4/7 pe-20 px-4 py-1 border-3 border-white uppercase mt-15 text-white font-bold">Your next chapter starts now</h2>
@@ -274,7 +274,7 @@
         </div>
     </div>
     <h2 class="text-4xl font-bold mt-10 mb-7 px-5 text-black">Latest events</h2>
-    <div class="grid grid-cols-2 gap-3">
+    <div class="grid grid-cols-2 gap-3 px-4">
         <div class="grid grid-cols-2 gap-8 bg-white p-4">
             <img src="./images/564be10e-4d16-4c51-a025-9a4b65359e4d.webp" class="h-[50vh]"  alt="">
             <div class="space-y-5">
@@ -295,6 +295,90 @@
                 <h2 class="text-xl font-bold text-[rgba(33_43_88)] underline">Daniel Martinez Flamenco Company: Art of Andalucia | Flamenco Dance</h2>
             </div>
         </div>
+        <button class="border-1 text-gray-800 text-lg w-fit border-gray-800 p-3 my-2">See more events</button>
     </div>
+    <footer class="bg-[rgb(44,56,68)]">
+        <div class="grid grid-cols-6 py-6 pt-5">
+            <img src="./images/theoriginal.png" class="col-span-2 w-80" alt="">
+            <div class="col-span-1 text-white">
+                <h2 class="text-xl font-bold">Information for</h2>
+                <ul class="[&>*]:underline [&>*]:hover:decoration-2 space-y-1 text-lg">
+                    <li><a href="#">Current students</a></li>
+                    <li><a href="#">Current staff</a></li>
+                    <li><a href="#">Prospective students</a></li>
+                    <li><a href="#">Businesses and</a></li>
+                    <li><a href="#">partners</a></li>
+                    <li><a href="#">Researchers</a></li>
+                    <li><a href="#">Media</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1 text-white">
+                <h2 class="text-xl font-bold">Study at Liverpool</h2>
+                <ul class="[&>*]:underline [&>*]:hover:decoration-2 space-y-1 text-lg">
+                    <li><a href="#">Undergraduate</a></li>
+                    <li><a href="#">Postgraduate taught</a></li>
+                    <li><a href="#">Postgraduate research</a></li>
+                    <li><a href="#">Online courses</a></li>
+                    <li><a href="#">CPD</a></li>
+                    <li><a href="#">Continuing education</a></li>
+                    <li><a href="#">International students</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1 text-white">
+                <h2 class="text-xl font-bold">Quick links</h2>
+                <ul class="[&>*]:underline [&>*]:hover:decoration-2 space-y-1 text-lg">
+                    <li><a href="#">Jobs at Liverpool</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Sport at Liverpool</a></li>
+                    <li><a href="#">Our people</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Our departments and faculties</a></li>
+                    <li><a href="#">All subjects</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1 text-white">
+                <h2 class="text-xl font-bold">Contact us</h2>
+                <ul class=" space-y-1 text-lg">
+                    <p>University of Liverpool</p>
+                    <p>Foundation Building</p>
+                    <p>Brownlow Hill</p>
+                    <p>Liverpool</p>
+                    <p>L69 7ZX</p>
+                    <p>+44 (0) 151 794 2000</p>
+                    <li class="underline hover:decoration-2"><a href="#">Contact us</a></li>
+                    <li class="underline hover:decoration-2"><a href="#">Maps and directions</a></li>
+                    <li class="underline hover:decoration-2"><a href="#">Visit us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="flex justify-between items-center p-4 text-white">
+
+            <div>
+                <p class="text-gray-500 font-semibold text-xl pl-1">Part of the </p>
+                <img src="./images/russel.png" class="w-40" alt="">
+            </div>
+            <div class="flex gap-4 text-5xl ">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-square-bluesky"></i>
+                <i class="fa-brands fa-square-threads"></i>
+            </div>
+        </div>
+        <hr>
+        <ul class="[&>*]:underline [&>*]:hover:decoration-2 space-y-1 py-3 text-lg text-white flex gap-4 px-4">
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Freedom of information</a></li>
+            <li><a href="#">Cookie information</a></li>
+            <li><a href="#">Data Protection</a></li>
+            <li><a href="#">Modern slavery statement</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Charitable status</a></li>
+        </ul>
+        <h3 class="px-4 pb-5 text-lg text-white">© University of Liverpool</h3>
+    </footer>
 </body>
 </html>
