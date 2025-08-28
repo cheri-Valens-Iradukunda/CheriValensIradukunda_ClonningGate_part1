@@ -8,9 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"rel="stylesheet"/>
 </head>
 <body class="overflow-x-hidden text-gray-700 bg-gray-300">
-    <div class="absolute z-10 hidden bg-white">
+    <div id="nav" class="absolute z-10 h-0 overflow-hidden transition-all ease-in-out bg-white">
         <ul class="text-gray-800 gap-3 text-sm w-screen p-5 space-y-4 me-4">
-            <i class="fa-solid fa-xmark text-2xl"></i>
+            <i class="fa-solid fa-xmark text-2xl" onclick="document.getElementById('nav').style.height='0'"></i>
             <li class="flex items-center font-semibold text-md justify-between w-full gap-2">
                 <a href="#">Study</a>
                 <i class="fa-solid fa-chevron-down rotate-270"></i>
@@ -43,7 +43,7 @@
     <div class="w-screen h-screen bg-[url(/images/HomeBg.webp)] bg-[center_top_20%] bg-cover object-cover py-1 px-4">
         <nav class="firstNav flex justify-between items-center mb-5">
             <img src="./images/logo.png" class="w-50 ps-0" alt="company logo">
-            <i class="fa-solid fa-bars md:hidden text-white text-xl"></i>
+            <i class="fa-solid fa-bars md:hidden text-white text-xl" onclick="document.getElementById('nav').style.height ='100vh'"></i>
             <ul class="text-white hidden md:flex gap-3 text-sm font-semibold me-4">
                 <li><a href="#">News</a></li>
                 <li><a href="#">Jobs</a></li>
