@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/tailwind/output.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"rel="stylesheet"/>
 </head>
-<body class="">
+<body class="overflow-x-hidden">
     <div class="w-screen h-screen bg-[url(/images/HomeBg.webp)] bg-[center_top_20%] bg-cover py-1 px-4">
         <nav class="firstNav flex justify-between items-center mb-5">
             <img src="./images/logo.png" class="w-50 ps-0" alt="company logo">
@@ -63,6 +63,20 @@
             <div class="[&>*]:underline [&>*]:w-fit space-y-2 text-md">
                 <p>Courses by A-Z</p>
                 <p>Courses by Subject</p>
+            </div>
+        </div>
+        <div class="flex justify-center text-xl mt-5 -ms-24 gap-8">
+            <div>
+                <input type="radio" name="radio" class="w-4 h-4" id="undergraduate">
+                <label for="undergraduate">Undergraduate</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" class="w-4 h-4" id="postgraduate">
+                <label for="postgraduate">Postgraduate taught</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" class="w-4 h-4" id="research">
+                <label for="research">Postgraduate research</label>
             </div>
         </div>
     </div>
