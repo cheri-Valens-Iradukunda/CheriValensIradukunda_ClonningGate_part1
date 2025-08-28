@@ -8,10 +8,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"rel="stylesheet"/>
 </head>
 <body class="overflow-x-hidden text-gray-700 bg-gray-300">
+    <div class="absolute z-10 hidden bg-white">
+        <ul class="text-gray-800 gap-3 text-sm w-screen p-5 space-y-4 me-4">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+            <li class="flex items-center font-semibold text-md justify-between w-full gap-2">
+                <a href="#">Study</a>
+                <i class="fa-solid fa-chevron-down rotate-270"></i>
+            </li>
+            <li class="flex justify-between font-semibold text-md w-full gap-2">
+                <a href="#">Student life</a>
+                <i class="fa-solid fa-chevron-down rotate-270"></i>
+            </li>
+            <li class="flex justify-between font-semibold text-md w-full gap-2">
+                <a href="#">Research and innovation</a>
+                <i class="fa-solid fa-chevron-down rotate-270"></i>
+            </li>
+            <li class="flex justify-between font-semibold text-md w-full gap-2">
+                <a href="#">Global</a>
+                <i class="fa-solid fa-chevron-down rotate-270"></i>
+            </li>
+            <li class="flex justify-between font-semibold text-md w-full gap-2">
+                <a href="#">About us</a>
+                <i class="fa-solid fa-chevron-down rotate-270"></i>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">A-Z</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Students</a></li>
+        </ul>
+    </div>
     <div class="w-screen h-screen bg-[url(/images/HomeBg.webp)] bg-[center_top_20%] bg-cover object-cover py-1 px-4">
         <nav class="firstNav flex justify-between items-center mb-5">
             <img src="./images/logo.png" class="w-50 ps-0" alt="company logo">
-            <ul class="text-white flex gap-3 text-sm font-semibold me-4">
+            <i class="fa-solid fa-bars md:hidden text-white text-xl"></i>
+            <ul class="text-white hidden md:flex gap-3 text-sm font-semibold me-4">
                 <li><a href="#">News</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Donate</a></li>
@@ -21,7 +54,7 @@
                 <li><a href="#">Students</a></li>
             </ul>
         </nav>
-        <nav class="secondNav flex justify-between text-white ps-0">
+        <nav class="secondNav hidden md:flex justify-between text-white ps-0">
             <ul class="flex content-start text-md font-bold md:gap-5 lg:gap-8 [&>*]:pb-3 [&>*]:hover:border-b-2 [&>*]:hover:border-b-amber-50">
                 <li class="flex items-center gap-2">
                     <a href="#">Study</a>
@@ -49,23 +82,24 @@
                 <p class="hover:border-b-2 hover:border-white hidden md:block">search the site</p>
             </div>
         </nav>
-        <h2 class="text-[2.48832rem] w-4/7 pe-20 px-4 py-1 border-3 border-white uppercase mt-15 text-white font-bold">Your next chapter starts now</h2>
-        <p class="text-[1.2rem] text-white w-1/2 pe-15 px-4 py-2 border-t-0 border-white border-3">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
+        <h2 class="text-lg md:text-2xl lg:text-[2.48832rem] md:w-4/7 pe-20 px-4 py-1 border-3 border-white uppercase mt-10 sm:mt-28 md:mt-10 lg:mt-15 text-white font-bold">Your next chapter starts now</h2>
+        <p class="text-lg md:text-[1.2rem] text-white md:w-2/3 lg:w-1/2  pe-15 px-4 py-2 border-white border-3">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
         
-        <p class="text-[1.2rem] font-normal text-white w-1/4  pe-15 px-4 py-2 border-gray-300 border-1 mt-10">Explore our welcome activities <span><i class="fa-solid fa-chevron-right ms-4"></i></span></p>
+        <p class="text-lg md:text-[1.2rem] font-normal text-white md:w-2/4 lg:w-1/4  pe-15 px-4 py-2 border-gray-300 border-1 mt-10">Explore our welcome activities <span><i class="fa-solid fa-chevron-right ms-4"></i></span></p>
         
     </div>
     <div class="bg-[rgba(33_43_88)] py-10 px-15 ">
-        <div class="flex gap-5 items-center">
+        <div class="md:flex gap-5 items-center">
             <h3 class="text-2xl font-bold font-sans text-white">Find your course</h3>
-            <input type="text" class="bg-amber-50 outline-none p-3 !text-black w-1/2 h-15">
-            <button class="bg-transparent border-1 p-4 border-white text-white">Search</button>
+            <input type="text" class="bg-amber-50 outline-none p-3 !text-black w-3/4 md:w-1/2 h-15">
+            <button class="hidden md:block bg-transparent border-1 p-4 border-white text-white">Search</button>
+            <button class="bg-transparent border-1 p-4 border-white text-white md:hidden"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="[&>*]:underline [&>*]:w-fit space-y-2 text-md text-white">
                 <p>Courses by A-Z</p>
                 <p>Courses by Subject</p>
             </div>
         </div>
-        <div class="flex justify-center text-xl mt-5 -ms-24 gap-8 text-white">
+        <div class="md:flex justify-center text-xl mt-5 md:-ms-24 gap-8 text-white">
             <div>
                 <input type="radio" name="radio" class="w-4 h-4" id="undergraduate">
                 <label for="undergraduate">Undergraduate</label>
