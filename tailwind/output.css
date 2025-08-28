@@ -220,8 +220,17 @@
   .content-center {
     align-content: center;
   }
+  .content-start {
+    align-content: flex-start;
+  }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -391,6 +400,16 @@
       @media (hover: hover) {
         border-color: var(--color-white);
       }
+    }
+  }
+  .\[\&\>\*\]\:pb-2 {
+    &>* {
+      padding-bottom: calc(var(--spacing) * 2);
+    }
+  }
+  .\[\&\>\*\]\:pb-3 {
+    &>* {
+      padding-bottom: calc(var(--spacing) * 3);
     }
   }
   .\[\&\>\*\]\:hover\:border-2 {
